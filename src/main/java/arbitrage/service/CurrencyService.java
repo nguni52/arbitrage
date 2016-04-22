@@ -12,10 +12,13 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public class CurrencyService {
     private static final Logger log = LoggerFactory.getLogger(CurrencyService.class);
+
     public void findMaximizedProfits(String base) {
         log.info("BASE IS ::: " + base);
         RestTemplate restTemplate = new RestTemplate();
-        CurrencyExchange currencyExchange = restTemplate.getForObject("http://api.fixer.io/latest?base=USD", CurrencyExchange.class);
+        CurrencyExchange currencyExchange = restTemplate.getForObject("http://api.fixer.io/latest?base={currency}", CurrencyExchange.class, base);
+        log.info(String.valueOf(currencyExchange.getRates().getAUD()));
         log.info(currencyExchange.toString());
+        System.out.println(currencyExchange.getRates().getAUD());
     }
 }

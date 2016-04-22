@@ -13,8 +13,8 @@ apply plugin: 'idea'
 apply plugin: 'spring-boot'
 
 jar {
-    baseName = 'gs-consuming-rest'
-    version =  '0.1.0'
+    baseName = 'arbitrage'
+    version =  '0.1.1'
 }
 
 repositories {
