@@ -6,7 +6,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
-import java.util.List;
 
 /**
  * Created by nguni52 on 16/04/22.
@@ -18,5 +17,5 @@ import java.util.List;
 public class CurrencyExchange {
     private String base;
     private Date date;
-    private List<Rates> ratesList;
+    private Rates rates;
 }

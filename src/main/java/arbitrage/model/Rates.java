@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Rates {
-    private String AUD;
-    private String BGN;
-    private String CAD;
+    private float AUD;
+    private float BGN;
+    private float CAD;
 }
