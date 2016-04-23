@@ -1,7 +1,27 @@
-# arbitrage
+arbitrage Project
+=========================
 
-To build and run, on command line execute this line
-```
-./run.sh USD
-```
-where USD is the base currency of choice
+This is a project about solving maximizing arbitrage using gradle as build tool and [spring-boot][1] as a framework.
+
+Pre-reqs:
+--------
+
+To build this project you must install Java 1.8.
+
+Installing && Running:
+----------
+
+1. Clone this repo.
+
+    `$ git@github.com:nguni52/arbitrage.git`
+
+2. At project root directory run:
+
+    `$ ./run.sh USD`
+
+where USD is the base currency of choice.
+
+A jar file will be generated at `<project-home>/build/libs/arbitrage-0.1.1.jar`. This is what is run and the output that 
+is visible when running
+
+[1]: http://projects.spring.io/spring-boot/       "Spring-Boot"
