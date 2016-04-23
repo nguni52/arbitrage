@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.HashMap;
 
 /**
  * Created by nguni52 on 16/04/22.
@@ -18,5 +19,5 @@ import java.util.Date;
 public class CurrencyExchange implements Serializable {
     private String base;
     private Date date;
-    private Rates rates;
+    private HashMap<String, Double> rates;
 }
