@@ -1,7 +1,5 @@
-# arbitrate-v1
+# arbitrage
 
-To build and run, on command line excute this line
-    ./gradlew build && java -jar build/libs/gs-consuming-rest-0.1.0.jar USD 
-    
-    
+To build and run, on command line execute this line
+    ./run.sh USD 
 where USD is the base currency of choice

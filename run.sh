@@ -1,2 +1,8 @@
 #!/usr/bin/env bash
-./gradlew build && java -jar build/libs/gs-consuming-rest-0.1.0.jar
+if [ -z "$1" ]
+then
+    ./gradlew build && java -jar build/libs/arbitrage-0.1.1.jar
+else
+    echo $1
+    ./gradlew build && java -jar build/libs/arbitrage-0.1.1.jar $1
+fi
