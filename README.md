@@ -3,8 +3,8 @@ arbitrage Project
 
 This is a project about solving maximizing arbitrage using gradle as build tool and [spring-boot][1] as a framework.
 
-Pre-reqs:
---------
+Pre-requisites:
+---------------
 
 To build this project you must install Java 1.8.
 
