@@ -13,7 +13,7 @@ Installing & Running:
 
 1. Clone this repo.
 
-    `$ git@github.com:nguni52/arbitrage.git`
+    `$ git clone git@github.com:nguni52/arbitrage.git`
 
 2. At project root directory run:
 
