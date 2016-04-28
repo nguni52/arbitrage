@@ -137,11 +137,11 @@ public class CurrencyService {
         int pathSize = pathList.size();
         StringBuilder sb = new StringBuilder();
         for (Path path : pathList) {
-            sb.append(path.getBase() + "(" + path.getRate() + ")" + " => ");
+            sb.append(path.getBase() + " (" + path.getRate() + ")" + " => ");
         }
         Double lastElementRate = currencyExchange.getRates().get(pathList.get(pathSize-1).getBase()) / pathList.get(pathSize-1).getRate();
 //        log.info(pathList.get(pathSize-1).getBase() + "::" + pathList.get(pathSize-1).getRate().toString());
-        sb.append(lastElementRate.toString() + " > 1" + currencyExchange.getBase());
+        sb.append(lastElementRate.toString() + " " + currencyExchange.getBase() + " > 1 " + currencyExchange.getBase());
         log.info(sb.toString());
     }
 }
